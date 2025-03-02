@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Bridges Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a3a5b;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        header .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        header .contact-info span {
+            background-color: #ff8832;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-left: 10px;
+            font-size: 1em;
+        }
+
+        header .contact-info img {
+            margin-left: 20px;
+            width: 150px;
+            height: auto;  
+        }
+
+        nav {
+            background-color: #2d4f76;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff8832;
+        }
+
+        .banner {
+            background-image: url("images/mainbackground.png");
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .banner .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .services .service-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 23%;
+        }
+
+        .services .service-card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .services .service-card h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+
+        .services .service-card p {
+            font-size: 1em;
+            margin-bottom: 30px;
+        }
+
+        .services .service-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff8832;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .services .service-card a:hover {
+            background-color: #e86e1f;
+            transform: translateY(-2px);
+        }
+
+        .multimedia {
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px;
+            border: none;
+            background: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            padding-top: 15px;
+        }
+	.incorrect {
+	    background: #ef5350 !important;
+        }
+
+        aside {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            width: 80%;
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #2d4f76;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            Building Bridges
+        </div>
+        <div class="contact-info">
+            <span>0921-900-9614</span>
+            <img src="images/Logo.png" alt="Logo">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="Issues.html">Issues</a></li>
+            <li><a href="Solutions.html">Solutions</a></li>
+            <li><a href="Conclusions.html">Conclusions</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <div class="overlay">
+            <h1>Welcome to Building Bridges</h1>
+            <p>"Education builds bridges not just of knowledge, but of equality, connecting all students to the future they deserve."</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-card">
+            <img src="images/background2.png" alt="Service Image">
+            <h3>About Education</h3>
+            <p>This part talks about education, its importance to human and its possible issues.</p>
+            <a href="https://uark.pressbooks.pub/introductiontoeducation/chapter/social-issues/#:~:text=Education%20is%20the%20catalyst%20for%20success.%20Research%20shows" target="_blank">Read More</a>
+        </div>
+        <div class="service-card">
+            <img src="images/background3.png" alt="Service Image">
+            <h3>Issues</h3>
+            <p>This part talks about the social issues that education was and are currently facing.</p>
+            <a href="https://blogs.worldbank.org/en/education/four-biggest-problems-facing-education-and-four-trends-could-make-difference" target="_blank">Read More</a>
+        </div>
+        <div class="service-card">
+            <img src="images/background4.png" alt="Service Image">
+            <h3>Solutions</h3>
+            <p>This part talks about the solutions we can do to solve the social issues of education.</p>
+            <a href="https://uark.pressbooks.pub/introductiontoeducation/chapter/social-issues/#:~:text=Education%20is%20the%20catalyst%20for%20success.%20Research%20shows" target="_blank">Read More</a>
+        </div>
+        <div class="service-card">
+            <img src="images/background5.png" alt="Service Image">
+            <h3>Conclusions</h3>
+            <p>This part shows the conclusions we can get about education, issues, and solutions.</p>
+            <a href="https://uark.pressbooks.pub/introductiontoeducation/chapter/social-issues/#:~:text=Education%20is%20the%20catalyst%20for%20success.%20Research%20shows" target="_blank">Read More</a>
+        </div>
+    </section>
+
+     <section class="quiz-container">
+        <h1>Quiz For You!</h1>
+        <div id="question-container"></div>
+        <div id="answer-buttons" class="btn-container"></div>
+        <button id="prev-btn" class="btn">Previous</button>
+        <button id="next-btn" class="btn">Next</button>
+        <button id="submit-btn" class="btn">Submit</button>
+        <div id="result-container"></div>
+        <div id="timer">Time Left: <span id="time">90</span> sec</div>
+    </section>
+
+    <script>
+        const questions = [
+            { question: "What is the main goal of our SDG?", answers: ["Education", "Zero Hunger", "Equality", "Climate Action"], correct: 0 },
+            { question: "What is one major issues seen in Education?", answers: ["Smart students", "Low quality of teaching", "Excessive government funding", "Overqualified students"], correct: 1 },
+            { question: "How can technology help improve education access?", answers: ["By providing online learning platforms", "By making education more expensive", "By replacing teachers completely", "By limiting student creativity"], correct: 0 },
+            { question: "Which of the following is a strategy to ensure inclusive education?", answers: ["Restricting education to top students", "Not building more accessible schools", "Higher-quality of education", "Reducing teacher training"], correct: 2 },
+            { question: "What role do governments play in improving education?", answers: ["Banning online learning", "Closing public schools", "Reducing student enrollment", "Funding schools and training teachers"], correct: 3 }
+        ];
+
+       let currentQuestionIndex = 0;
+    let score = 0;
+    let timeLeft = 60;
+    let timer;
+    let answered = false;
+
+    function startQuiz() {
+        showQuestion();
+        timer = setInterval(updateTimer, 1000);
+    }
+
+    function showQuestion() {
+        const questionContainer = document.getElementById("question-container");
+        const answerButtons = document.getElementById("answer-buttons");
+        questionContainer.innerHTML = `<h2>${questions[currentQuestionIndex].question}</h2>`;
+        answerButtons.innerHTML = "";
+        answered = false;
+
+        questions[currentQuestionIndex].answers.forEach((answer, index) => {
+            const button = document.createElement("button");
+            button.innerText = answer;
+            button.classList.add("btn");
+            button.onclick = () => selectAnswer(index, button);
+            answerButtons.appendChild(button);
+        });
+
+        document.getElementById("prev-btn").style.display = currentQuestionIndex === 0 ? "none" : "inline-block";
+        document.getElementById("next-btn").style.display = "inline-block";
+    }
+
+    function selectAnswer(index, button) {
+        if (!answered) {
+            const correct = questions[currentQuestionIndex].correct;
+            if (index === correct) {
+                score++;
+                button.style.backgroundColor = "#28a745";
+            } else {
+                button.style.backgroundColor = "#dc3545";
+            }
+            answered = true;
+        }
+    }
+
+    function nextQuestion() {
+        if (!answered) {
+            alert("Kindly answer this question before you proceed to the next one, thank you.");
+            return;
+        }
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            showQuestion();
+        } else {
+            endQuiz();
+        }
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            showQuestion();
+        }
+    }
+
+    function updateTimer() {
+        if (timeLeft > 0) {
+            timeLeft--;
+            document.getElementById("time").textContent = timeLeft;
+        } else {
+            clearInterval(timer);
+            endQuiz();
+        }
+    }
+
+    function endQuiz() {
+        clearInterval(timer);
+        document.getElementById("question-container").innerHTML = `<h2>Your results are submitted, thank you for answering!</h2><h3>Your Score: ${score}/${questions.length}</h3>`;
+        document.getElementById("answer-buttons").innerHTML = "";
+        document.getElementById("nav-buttons").innerHTML = "";
+    }
+
+    document.getElementById("submit-btn").addEventListener("click", endQuiz);
+    document.getElementById("next-btn").addEventListener("click", nextQuestion);
+    document.getElementById("prev-btn").addEventListener("click", prevQuestion);
+    startQuiz();
+    </script>
+
+    <aside>
+        <h2>Did You Know?</h2>
+        <p>Investing in education can significantly reduce poverty and promote gender equality. Schools worldwide are finding innovative ways to make education accessible for all. For more information on global education initiatives, visit <a href="https://www.unesco.org/en/education" target="_blank">UNESCO Education</a>.</p>
+    </aside>
+
+    <section class="multimedia">
+        <h2>Multimedia Section</h2>
+        <p>Here's a video content related to education and social issues:</p>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nralkrM43uQ?si=RC1o1MvjpqDoQKPu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+    <p>
+        Contacts: 
+        <a href="mailto:princessllianaur@gmail.com">
+            <img src="images/gmail.png" alt="Gmail Logo" style="width: 20px; height: auto; vertical-align: middle; margin-right: 5px;">
+            princessllianaur@gmail.com
+        </a>
+    </p>
+    <p>© 2024 Building Bridges. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

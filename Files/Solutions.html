@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 0;
+            background-image: url("images/content-bg.jpg"); 
+            background-size: cover; 
+            background-clip: content-box; 
+        }
+
+        .content-container {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-origin: padding-box; 
+        }
+
+        header, section {
+            text-align: center; 
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content-flex {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .animation {
+            width: 426px; 
+            height: 221px; 
+            background-image: url("images/solutionspic.png"); 
+            background-size: 110%;
+            animation: play 1s steps(5) infinite; 
+        }
+
+        @keyframes play {
+            from { background-position: 0; }
+            to { background-position: -100%; }
+        }
+
+        img {
+            max-width: 50%;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: transform 0.3s ease; 
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .text-content {
+            max-width: 50%;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            color: #0000EE;
+            margin-top: 50px;
+            text-decoration: none;
+            padding: 8px 16px; 
+            border: 1px solid #0000EE;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0000EE;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <h1>Solutions</h1>
+        
+        <h2>Solutions for Education</h2>
+        <div class="content-flex">
+            <div class="animation"></div> <!-- Sprite animation -->
+            <div class="text-content">
+                <p>
+                    Although research and statistics about the impact of social issues on education can be overwhelming, communication plays a vital role. Modern technology enables us to connect 24/7, fostering strong links between families and schools.
+                </p>
+                <p>
+                    Schools are working hard to involve parents in the educational process. Through accessible communication tools, teachers can share essential information, ensuring no resources are wasted.
+                </p>
+            </div>
+        </div>
+
+        <a href="buildingbridges.html">Back to Home</a>
+    </div>
+
+</body>
+</html>

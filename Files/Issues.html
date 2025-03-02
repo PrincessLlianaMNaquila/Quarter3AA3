@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issues</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: lightblue; 
+            padding: 20px;
+            margin: 0;
+            background-image: url("images/content-bg.jpg"); 
+            background-size: cover; 
+            background-clip: content-box; 
+        }
+
+        .content-container {
+            background-color: white;
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative; 
+            background-origin: padding-box; 
+        }
+
+        header, section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .content-flex {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        img {
+            max-width: 45%;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: transform 0.3s ease; 
+        }
+
+        img[src] {
+            border: 2px solid red; 
+        }
+
+        img:hover {
+            transform: scale(1.05); 
+        }
+
+        .text-content {
+            max-width: 50%;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            color: #0000EE;
+            margin-top: 30px;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid #0000EE;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; 
+        }
+
+        a:hover {
+            background-color: #0000EE;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Issues in Education We Should All Be Aware Of</h1>
+    </header>
+
+    <div class="content-container">
+        <section>
+            <h2>The learning crisis was made worse by COVID-19 school closures</h2>
+            <div class="content-flex">
+                <img src="images/issuespic2.png" alt="Educational Issues">
+                <div class="text-content">
+                    <p>
+                        Several analyses show that the impact of the pandemic on student learning was significant, leaving students in low- and middle-income countries far behind in mathematics and other subjects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Countries are not paying enough attention to Early Childhood Care and Education (ECCE)</h2>
+            <p>
+                At the pre-school level, about two-thirds of countries do not have a proper legal framework to provide free and compulsory pre-primary education. According to UNESCO, only a minority of countries, mostly high-income, were making timely progress towards SDG4 benchmarks on early childhood indicators prior to the onset of COVID-19.
+            </p>
+        </section>
+
+        <footer>
+            <a href="buildingbridges.html">Back to Home</a>
+        </footer>
+    </div>
+
+</body>
+</html>
