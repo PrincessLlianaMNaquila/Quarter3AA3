@@ -1,0 +1,168 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1a3a5b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header .contact-info {
+    display: flex;
+    align-items: center;
+}
+
+header .contact-info span {
+    background-color: #ff8832;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+header .contact-info img {
+    margin-left: 20px;
+    width: 150px;
+    height: auto;  
+}
+
+nav {
+    background-color: #2d4f76;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff8832;
+}
+
+/* Common container styles */
+.signup-container,
+.profile-container {
+    max-width: 600px;
+    background: white;
+    margin: 50px auto;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Signup-specific */
+.signup-container h1 {
+    text-align: center;
+    color: #1a3a5b;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.site-description {
+    text-align: center;
+    font-size: 1em;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+button[type="submit"] {
+    background-color: #ff8832;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #e86e1f;
+    transform: translateY(-2px);
+}
+
+.required {
+    color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+/* Profile-specific */
+.profile-container h2 {
+    text-align: center;
+    color: #1a3a5b;
+    margin-bottom: 20px;
+}
+
+.profile-container p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.profile-container a {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: #ff8832;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.profile-container a:hover {
+    background-color: #e86e1f;
+}

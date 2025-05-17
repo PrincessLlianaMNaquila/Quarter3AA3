@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Profile - Building Bridges</title>
+  <link rel="stylesheet" href="../CSSFOLDER/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      Building Bridges
+    </div>
+    <div class="contact-info">
+      <span>0921-900-9614</span>
+      <img src="../images/Logo.png" alt="Logo" />
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="AboutUs.html">About</a></li>
+      <li><a href="Issues.html">Issues</a></li>
+      <li><a href="Solutions.html">Solutions</a></li>
+      <li><a href="Conclusions.html">Conclusions</a></li>
+      <li><a href="proj_signup_naquila.html">Sign Up</a></li>
+      <li><a href="proj_profile_naquila.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Section -->
+  <div class="profile-container">
+    <h2>Your Profile Info</h2>
+    <p><strong>First Name:</strong> <span id="profileFirstName"></span></p>
+    <p><strong>Last Name:</strong> <span id="profileLastName"></span></p>
+    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+    <p><strong>Sex:</strong> <span id="profileSex"></span></p>
+    <p><strong>Why I Support:</strong> <span id="profileReason"></span></p>
+
+    <a href="../buildingbridges.html">← Back to Home</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2023 Building Bridges. All rights reserved.</p>
+  </footer>
+
+  <!-- Load Profile Data -->
+  <script>
+    document.getElementById("profileFirstName").textContent = localStorage.getItem("firstName");
+    document.getElementById("profileLastName").textContent = localStorage.getItem("lastName");
+    document.getElementById("profileEmail").textContent = localStorage.getItem("email");
+    document.getElementById("profileSex").textContent = localStorage.getItem("sex");
+    document.getElementById("profileReason").textContent = localStorage.getItem("reason");
+  </script>
+</body>
+</html>

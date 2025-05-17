@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - Building Bridges</title>
+  <link rel="stylesheet" href="../CSSFOLDER/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      Building Bridges
+    </div>
+    <div class="contact-info">
+      <span>0921-900-9614</span>
+      <img src="../images/Logo.png" alt="Logo" />
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="AboutUs.html">About</a></li>
+      <li><a href="Issues.html">Issues</a></li>
+      <li><a href="Solutions.html">Solutions</a></li>
+      <li><a href="Conclusions.html">Conclusions</a></li>
+      <li><a href="proj_signup_naquila.html">Sign Up</a></li>
+      <li><a href="proj_profile_naquila.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <!-- Signup Form -->
+  <div class="signup-container">
+    <h1>Sign Up</h1>
+    <p class="site-description">
+      Education builds bridges not just of knowledge, but of equality, connecting all students to the future they deserve.
+    </p><br><br>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="firstName">First Name <span class="required">*</span> <span id="firstNameError" class="error-message"></span></label>
+        <input type="text" id="firstName" name="firstName" required />
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name <span class="required">*</span> <span id="lastNameError" class="error-message"></span></label>
+        <input type="text" id="lastName" name="lastName" required />
+      </div>
+
+      <div class="form-group">
+        <label>Sex <span class="required">*</span> <span id="sexError" class="error-message"></span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="sex" value="male" required /> Male</label>
+          <label><input type="radio" name="sex" value="female" required /> Female</label>
+          <label><input type="radio" name="sex" value="prefer_not_to_say" required /> Prefer not to say</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address <span class="required">*</span> <span id="emailError" class="error-message"></span></label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password <span class="required">*</span> <span id="passwordError" class="error-message"></span></label>
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <div class="form-group">
+        <label for="contactNumber">Contact Number</label>
+        <input type="text" id="contactNumber" name="contactNumber" />
+      </div>
+
+      <div class="form-group">
+        <label for="supportReason">Why you’re supporting our campaign <span class="required">*</span> <span id="supportReasonError" class="error-message"></span></label>
+        <textarea id="supportReason" name="supportReason" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2023 Building Bridges. All rights reserved.</p>
+  </footer>
+
+  <script src="../JAVASCRIPTS/script.js"></script>
+</body>
+</html>
